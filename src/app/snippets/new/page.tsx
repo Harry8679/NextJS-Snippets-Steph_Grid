@@ -1,5 +1,5 @@
 import { db } from "@/db";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 export default function SnippetCreatePage() {
     async function createSnippet(formData: FormData) {
@@ -19,6 +19,8 @@ export default function SnippetCreatePage() {
         // Redirect the user back to the root route
         redirect('/');
     };
+
+    notFound();
     
     return (
     <form action={createSnippet}>
