@@ -20,7 +20,7 @@ export default function SnippetCreatePage() {
         redirect('/');
     };
 
-    notFound();
+    // notFound();
     
     return (
     <form action={createSnippet}>
