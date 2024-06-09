@@ -17,6 +17,7 @@ export default async function Home() {
         <h1 className="text-xl font-bold">Snippets</h1>
         <Link href="/snippets/new" className="border p-2 rounded">New</Link>
       </div>
+      
       <div className="flex flex-col gap-2">{renderedSnippets}</div>
     </div>
   );
